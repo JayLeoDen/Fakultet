@@ -1,1 +1,1 @@
-# Faks
+# Fakultet
