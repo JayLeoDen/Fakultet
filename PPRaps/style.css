@@ -1,0 +1,82 @@
+tr:nth-child(1) {
+  background-color: hsl(180, 50%, 39%);
+}
+
+tr:nth-child(2) {
+  background-color: hsl(76, 43%, 43%);
+}
+
+tr:nth-child(3) {
+    background-color: hsl(323, 68%, 45%);
+  }
+
+tr:nth-child(4) {
+    background-color: hsl(0, 53%, 54%);
+}
+
+tr:nth-child(5) {
+    background-color: hsl(246, 41%, 53%);
+}
+
+tr:nth-child(6) {
+    background-color: hsl(41, 61%, 52%);
+}
+
+li:nth-child(even) {
+  background-color: hsl(170, 46%, 73%);
+}
+
+li:nth-child(odd) {
+    background-color: hsl(221, 45%, 69%);
+}
+
+label:nth-child(even) {
+    background-color: hsl(54, 78%, 49%);
+}  
+
+label:nth-child(odd) {
+    background-color: hsl(171, 14%, 46%);
+}  
+
+h1:nth-child(1) {
+    background-color: hsl(305, 100%, 50%);
+}  
+
+input:nth-child(odd) {
+    background-color: hsl(123, 65%, 35%);
+}  
+
+input:nth-child(even) {
+    background-color: hsl(350, 24%, 45%);
+}  
+
+input:hover{
+    background-color: hsl(207, 100%, 83%);
+}
+
+input:focus{
+    background-color: hsl(313, 41%, 46%);
+}
+
+input:disabled{
+    background-color: hsl(268, 56%, 76%);
+}
+
+h2:nth-child(odd){
+    background-color: hsl(197, 32%, 43%);
+}
+
+.zavrseno {
+    text-decoration: line-through;
+    color: rgb(70, 69, 69);
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}

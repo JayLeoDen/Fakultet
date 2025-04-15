@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projektni praktikum: RAPS Labaratorij</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Projektni praktikum: RAPS Labaratorij</h1>
+    
+    <table>
+        <tr>
+            <th>Endpoint</th>
+            <th>Metoda</th>
+            <th style="width: 14rem;">Opis</th>
+        </tr>
+        <tr style="height: 3rem;">
+            <td rowspan="3">/user</td>
+            <td>GET</td>
+            <td style="text-align: center;">Dohvaća listu svih korisnika</td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>Kreira novog korisnika</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td>Briše određenog korisnika</td>
+        </tr>
+        <tr>
+            <td>/products</td>
+            <td>GET</td>
+            <td>Dohvaća listu svih proizvoda</td>
+        </tr>
+        <tr>
+            <td>/orders</td>
+            <td colspan="2" style="padding-left: 2rem; padding-bottom: 1rem;">
+                <li>Pregled svih narudžbi</li>
+                <li>Dodaj novu narudžbu</li>
+                <li>Ažuriraj postojeću narudžbu</li>
+            </td>
+        </tr>
+    </table>
+    
+    <br><br>
+
+    <form>
+        <label for="ime">Ime:</label><br>
+        <input type="text" id="ime" name="ime" required><br><br>
+        <label for="prezime">Prezime:</label><br>
+        <input type="text" id="prezime" name="prezime" required><br><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" disabled name="email"><br><br>
+        <label for="lozinka">Lozinka:</label><br>
+        <input type="text" id="lozinka" name="lozinka" required><br><br>
+        <label for="plozinka">Potvrdi lozinku:</label><br>
+        <input type="text" id="plozinka" name="plozinka" required><br><br>
+        <input type="submit" value="Registriraj se">
+    </form>
+    
+    <br>
+
+    <h2>To-Do Lista</h2>
+    <div class="input-container">
+        <input type="text" id="novi-zadatak-unos" placeholder="Unesite novi zadatak">
+        <button id="dodaj-zadatakgumb">Dodaj zadatak</button>
+    </div>
+    
+    <ul id="lista-zadataka"></ul> 
+
+    <hr>
+    <h2>Login forma</h2>
+    <div id="login-container">
+        <input type="text" id="username" placeholder="Korisničko ime"><br><br>
+        <input type="password" id="password" placeholder="Lozinka"><br><br>
+        <button onclick="login()">Prijava</button>
+        <div id="login-message" style="margin-top: 1rem; font-weight: bold;"></div>
+    </div>
+
+    <div id="protected-resource" style="display: none; margin-top: 2rem;">
+        <h3>skriveni resurs</h3>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
